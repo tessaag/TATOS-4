@@ -10,7 +10,7 @@ const HomePage = () => {
           <Image src="/1.gif" layout="fill" objectFit="cover" alt="Background" />
         </div>
         <div className="absolute top-0 left-3 pt-4 pl-4">
-          <Image src="/vector.png" width={170} height={10} alt="Logo" />
+          <Image src="/Vector.png" width={170} height={10} alt="Logo" />
         </div>
         <div className="absolute top-0 right-0 pt-4 pr-4 flex items-center">
           <button className="bg-white text-black px-4 py-2 mr-2 rounded-xl">
@@ -279,7 +279,7 @@ const HomePage = () => {
 
       <footer className="bg-black text-white py-9 relative rounded-t-2xl">
         <div className="absolute top-0 left-3 pt-4 pl-4">
-          <Image src="/vector.png" width={300} height={10} alt="Logo" />
+          <Image src="/Vector.png" width={300} height={10} alt="Logo" />
         </div>
         <div className="container flex justify-between items-center" style={{ marginLeft: 150 }}>
           <div style={{ marginLeft: 450 }}>
