@@ -26,7 +26,7 @@ const HomePage = () => {
             Welcome to TheMenu.me - <br />Your Culinary Journey <br /> Begins Here!
             </div>
             <div style={{ fontSize: 15, lineHeight: 1.5 }}>
-            At TheMenu.me, we are passionate about connecting food lovers with their <br />next delicious dining experience. Whether you're a seasoned foodie or just <br />looking for a new favorite spot, we're here to make exploring culinary <br />delights easy and enjoyable.
+            At TheMenu.me, we are passionate about connecting food lovers with their <br />next delicious dining experience. Whether you&apos;re a seasoned foodie or just <br />looking for a new favorite spot, we&apos;re here to make exploring culinary <br />delights easy and enjoyable.
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const HomePage = () => {
                 Support Local <br />Restaurants
               </div>
               <div style={{ fontSize: 15, lineHeight: 1.5 }}>
-                At TheMenu.me, we believe in supporting local <br /> businesses and celebrating the rich tapestry of <br /> culinary culture in every community. That's why <br /> we're committed to showcasing independently- <br />owned restaurants and highlighting the talented <br />chefs behind each dish.
+                At TheMenu.me, we believe in supporting local <br /> businesses and celebrating the rich tapestry of <br /> culinary culture in every community. That&apos;s why <br /> we&apos;re committed to showcasing independently- <br />owned restaurants and highlighting the talented <br />chefs behind each dish.
               </div>
               <button className="bg-black text-white px-4 py-2 mt-4 rounded-xl">
                 Get Started
@@ -217,7 +217,7 @@ const HomePage = () => {
               <hr style={{ borderTop: '2px solid rgba(0, 0, 0, 0.7)', width: 690, margin: '10px auto', marginLeft:10 }} />
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <p style={{ fontSize: 17, fontWeight: 500, lineHeight: '28.84px', color: 'black', marginLeft: 25 }}>
-                Can I showcase my restaurant's menu on TheMenu.me?
+                Can I showcase my restaurant&apos;s menu on TheMenu.me?
                 </p>
                 <Image src="/expand_more.png" width={50} height={50} alt="Image" style={{marginLeft:147}} />
               </div>
@@ -238,7 +238,7 @@ const HomePage = () => {
               <hr style={{ borderTop: '2px solid rgba(0, 0, 0, 0.7)', width: 690, margin: '10px auto', marginLeft:10 }} />
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <p style={{ fontSize: 17, fontWeight: 500, lineHeight: '28.84px', color: 'black', marginLeft: 25 }}>
-                Can I customize the design of my restaurant's website on <br /> TheMenu.me?
+                Can I customize the design of my restaurant&apos;s website on <br /> TheMenu.me?
                 </p>
                 <Image src="/expand_more.png" width={50} height={50} alt="Image" style={{marginLeft:138}} />
               </div>
@@ -252,7 +252,7 @@ const HomePage = () => {
               <hr style={{ borderTop: '2px solid rgba(0, 0, 0, 0.7)', width: 690, margin: '10px auto', marginLeft:10 }} />
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <p style={{ fontSize: 17, fontWeight: 500, lineHeight: '28.84px', color: 'black', marginLeft: 25 }}>
-                Can I integrate social media accounts with my restaurant's <br />website on TheMenu.me?
+                Can I integrate social media accounts with my restaurant&apos;s <br />website on TheMenu.me?
                 </p>
                 <Image src="/expand_more.png" width={50} height={50} alt="Image" style={{marginLeft:132}} />
               </div>
