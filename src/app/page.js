@@ -5,7 +5,7 @@ import Image from 'next/image';
 const HomePage = () => {
   return (
     <div className="scroll-container">
-      <section className="bg-center flex justify-center items-center text-white relative section-container" style={{ width: '1500px' }}>
+      <section className="bg-center flex justify-center items-center text-white relative section-container" style={{ width: '1520px' }}>
   <div className="absolute inset-0 z-0">
     <Image src="/1.gif" layout="fill" objectFit="cover" alt="Background" />
   </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1500px' }}>
+      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
         <div>
           <div className="absolute top-10 right-20">
             <Image src="/urban-line-self-service-in-vegan-cafe 1.png" width={800} height={350} alt="Image" />
@@ -75,7 +75,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1500px' }}>
+      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
         <div>
         <div className="absolute top-10 right-20">
           <Image src="/urban-line-thanksgiving-day-dinner 1.png" width={800} height={350} alt="Image" />
@@ -101,7 +101,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1500px' }}>
+      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
         <div>
           <div className="absolute top-10 right-20">
             <Image src="/journal-woman-leaving-a-review-of-a-product-and-rating-it 1.png" width={700} height={350} alt="Image" />
@@ -127,7 +127,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1500px' }}>
+      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
         <div>
           <div className="absolute top-10 right-20">
             <Image src="/journal-group-of-people-celebrating-together-at-the-table 1.png" width={800} height={350} alt="Image" />
@@ -153,7 +153,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1500px' }}>
+      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
         <div>
           <div className="absolute top-0 right-12 pt-0 pr-4" style={{ fontFamily: 'var(--typefacefamilytext)', fontSize: '32px', fontWeight: 500, lineHeight: '38.45px', textAlign: 'left' }}>
             <p className="text-xl">1/5</p>
@@ -175,7 +175,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1500px' }}>
+      <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
         <div>
           <div className="absolute inset-0 z-0">
             <Image src="/Rectangle 11.png" layout="fill" objectFit="cover" alt="Background" />
@@ -196,7 +196,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section style={{ width: '1500px', height: '1000px' }} className="bg-white flex justify-center items-center text-black relative section-container">
+      <section style={{ width: '1520px', height: '1000px' }} className="bg-white flex justify-center items-center text-black relative section-container">
         <div>
           <div className="absolute top-1 left-7 pt-4 pr-4" style={{ fontFamily: 'var(--typefacefamilytext)', fontSize: '32px', fontWeight: 500, lineHeight: '38.45px', textAlign: 'left' }}>
             <p className="text-xl">FAQ</p>
@@ -285,7 +285,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <footer className="bg-black text-white py-9 relative rounded-t-2xl" style={{ width: '1500px' }}>
+      <footer className="bg-black text-white py-9 relative rounded-t-2xl" style={{ width: '1520px' }}>
   <div className="absolute top-0 left-3 pt-4 pl-4">
     <Image src="/Vector.png" width={300} height={10} alt="Logo" />
   </div>
