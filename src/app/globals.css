@@ -42,7 +42,6 @@ body {
 }
 
 section {
-  width: 1728px; /* Set the width to 1728px */
   height: 100vh; /* Set the height to 100% of viewport height */
   display: inline-block; /* Ensure inline block display */
   scroll-snap-align: start; /* Snap to the start of each section */
