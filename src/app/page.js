@@ -285,17 +285,21 @@ const HomePage = () => {
         </div>
       </section>
 
-      <footer className="bg-black text-white py-9 relative rounded-t-2xl" style={{ width: '1520px' }}>
-  <div className="absolute top-0 left-3 pt-4 pl-4">
+      <footer className="bg-black text-white py-4 relative rounded-t-2xl" style={{ width: '1520px' }}>
+  <div className="absolute top-0 left-3 pt-5 pl-4">
     <Image src="/Vector.png" width={300} height={10} alt="Logo" />
   </div>
-  <div className="container flex justify-between items-center" style={{ marginLeft: 150 }}>
-    <div style={{ marginLeft: 450 }}>
+  <div className="container flex justify-center items-center" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+    <div>
       <p style={{ whiteSpace: 'pre' }}>templates       pricing</p>
     </div>
+  </div>
+  <div className="container flex justify-end items-center " style={{ marginLeft: 'auto', marginRight:20, marginBottom: 10}}>
     <p className="ml-auto">Copyright © 2024 themenu.me | All Rights Reserved</p>
   </div>
 </footer>
+
+
 
     </div>
   );
