@@ -1,6 +1,7 @@
 'use client'
-import React, { useState} from 'react';
+import React, { useState,useEffect} from 'react';
 import Image from 'next/image';
+
 
 const EditableName = () => {
   const [Name, setName] = useState('restaurant');
@@ -9,7 +10,7 @@ const EditableName = () => {
     setName(e.target.value);
   };
 
-  
+
   return (
     <input
       type="text"
@@ -18,6 +19,49 @@ const EditableName = () => {
       className="text-black text-xs text-left focus:outline-none"
       placeholder="name"
     />
+  );
+};
+
+const Slideshow = ({ images, interval = 3000 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
+
+    return () => clearInterval(slideInterval);
+  }, [images, interval]);
+
+  return (
+    <div className="slideshow">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`slide ${index === currentIndex ? 'active' : ''}`}
+        >
+          <Image src={image.src} width={image.width} height={image.height} alt={image.alt} />
+        </div>
+      ))}
+      <style jsx>{`
+        .slideshow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+        .slide {
+          position: absolute;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+        .slide.active {
+          opacity: 1;
+        }
+      `}</style>
+    </div>
   );
 };
 
@@ -82,6 +126,13 @@ const HomePage = () => {
       answer: "Yes, TheMEnu.me offers dedictaed customer support to help restaurant <br /> owners and managers with any questions or issues they may encounter. Our <br /> support team is available to assist you via email, chat, or phone during <br /> business hours.",
       imageMarginLeft: 145
     }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const images = [
+    { src: '/Rectangle 8.png', width: 250, height: 300, alt: 'Image' },
+    { src: '/Rectangle 9.png', width: 500, height: 300, alt: 'Image' },
+    { src: '/Rectangle 10.png', width: 700, height: 5300, alt: 'Image' },
   ];
 
   return (
@@ -229,23 +280,23 @@ const HomePage = () => {
       </section>
 
       <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
-        <div>
-          <div className="absolute top-0 right-12 pt-0 pr-4" style={{ fontFamily: 'var(--typefacefamilytext)', fontWeight: 500, lineHeight: '38.45px', textAlign: 'left' }}>
-            <p className="text-xl">1/5</p>
-          </div>
-          <div className="absolute top-8 left-10 right-10">
-            <Image src="/carousel.png" width={1370} height={900} alt="Image" />
-          </div>
-          <div className="absolute bottom-0 left-0 pb-4 pl-4">
-            <div style={{ fontSize: '3rem', fontWeight: 600, lineHeight: '76.9px', marginBottom: '10px' }}>
+      <div>
+        <div className="absolute top-0 right-12 pt-0 pr-4" style={{ fontFamily: 'var(--typefacefamilytext)', fontWeight: 500, lineHeight: '38.45px', textAlign: 'left' }}>
+          <p className="text-xl">1/3</p>
+        </div>
+        <div className="absolute top-64 left-10 right-10 flex justify-between">
+          <Slideshow images={images} interval={3000} />
+        </div>
+        <div className="absolute bottom-0 left-0 pb-4 pl-4">
+          <div style={{ fontSize: '3rem', fontWeight: 600, lineHeight: '76.9px', marginBottom: '10px' }}>
             Feedbacks/reviews/ <br />partners
-            </div>
-          </div>
-          <div className="absolute bottom-6 right-32 pr-4 pb-4">
-            <Image src="/Group.png" width={195} height={500} alt="Image" />
           </div>
         </div>
-      </section>
+        <div className="absolute bottom-6 right-32 pr-4 pb-4">
+          <Image src="/Group.png" width={140} height={500} alt="Image" />
+        </div>
+      </div>
+    </section>
 
       <section className="bg-white flex justify-center items-center text-black relative section-container" style={{ width: '1520px' }}>
         <div>
